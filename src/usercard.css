@@ -1,10 +1,18 @@
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 40px;
+}
+
 .usercard {
     display: block;
-    float: left;
+    width: 250px;
     font-size: 12px;
     margin: 20px;
     padding: 10px;
-    width: 20%;
     border: 2px solid black;
     border-radius: 12px;
 }

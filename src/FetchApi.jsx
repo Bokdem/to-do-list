@@ -17,8 +17,10 @@ export default function FetchApi() {
             console.log(err)
         })
     }, [])
-
-    const userList = data.map((user) => 
+    
+    const [usersShown, setUsersShown] = useState(1)
+    // console.log(maxSlice)
+    const userList = data.slice(0, usersShown).map((user) => 
         <div key={user.name} className="usercard">
             <h1>{user.username}</h1>
             <p>Name: {user.name}</p>
@@ -38,7 +40,11 @@ export default function FetchApi() {
     return (
         <>
             <p>Fetch something!</p>
-            {userList}
+            <button onClick={() => setUsersShown(usersShown < 10 ? usersShown + 1 : alert('Er zitten max 10 users in dit Object') & usersShown) & console.log(usersShown)}>Fetch me 1 more user!</button>
+            <button onClick={() => setUsersShown(usersShown - 1)}>Fetch me 1 less user!</button>
+            <div className="cards-wrapper">
+                {userList}
+            </div>
         </>
     )
 }
