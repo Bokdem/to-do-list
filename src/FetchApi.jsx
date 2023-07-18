@@ -40,8 +40,8 @@ export default function FetchApi() {
     return (
         <>
             <p>Fetch something!</p>
-            <button onClick={() => setUsersShown(usersShown < 10 ? usersShown + 1 : alert('Er zitten max 10 users in dit Object') & usersShown) & console.log(usersShown)}>Fetch me 1 more user!</button>
-            <button onClick={() => setUsersShown(usersShown - 1)}>Fetch me 1 less user!</button>
+            <button style={{ display: usersShown < 10 ? "block" : "none" }} onClick={() => setUsersShown(usersShown + 1)}>Fetch me 1 more user!</button>
+            <button style={{ display: usersShown > 1 ? "block" : "none" }} onClick={() => setUsersShown(usersShown - 1)}>Fetch me 1 less user!</button>
             <div className="cards-wrapper">
                 {userList}
             </div>
