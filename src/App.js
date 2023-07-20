@@ -1,8 +1,8 @@
-import './App.css';
 import { useState, useEffect } from 'react';
 import { TodoForm } from './TodoForm';
 import TodoList from './TodoList';
 import FetchApi from './FetchApi';
+import FormsInReact from './FormsInReact';
 
 function App() {
   const [todos, setTodos] = useState(() => {
@@ -48,6 +48,7 @@ function App() {
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       <FetchApi />
+      <FormsInReact />
     </>
   );
 }
