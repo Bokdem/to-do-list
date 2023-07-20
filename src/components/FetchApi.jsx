@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import axios from "axios"
-import './usercard.css';
+import '../usercard.css';
 
 export default function FetchApi() {
     // const BASE_URL = "https://customsearch.googleapis.com/customsearch/v1"

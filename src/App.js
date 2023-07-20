@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { TodoForm } from './TodoForm';
-import TodoList from './TodoList';
-import FetchApi from './FetchApi';
-import FormsInReact from './FormsInReact';
+import { TodoForm } from './components/TodoForm';
+import TodoList from './components/TodoList';
+import FetchApi from './components/FetchApi';
+import FormsInReact from './components/FormsInReact';
 
 function App() {
   const [todos, setTodos] = useState(() => {
