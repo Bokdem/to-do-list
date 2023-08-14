@@ -12,7 +12,7 @@ export default function FormsInReact() {
             employment: ""
         }
     )
-        console.log(formData)
+
     function handleChange(event) {
         const {name, value, checked, type} = event.target
         setFormData(prevFormData => {

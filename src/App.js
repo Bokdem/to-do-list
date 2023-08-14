@@ -3,6 +3,8 @@ import { TodoForm } from './components/TodoForm';
 import TodoList from './components/TodoList';
 import FetchApi from './components/FetchApi';
 import FormsInReact from './components/FormsInReact';
+import PasswordChecker from './components/PasswordChecker';
+import Counter from './components/Counter';
 
 function App() {
   const [todos, setTodos] = useState(() => {
@@ -49,6 +51,8 @@ function App() {
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       <FetchApi />
       <FormsInReact />
+      <PasswordChecker />
+      <Counter />
     </>
   );
 }
